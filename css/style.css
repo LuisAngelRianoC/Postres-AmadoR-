@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap");
 
 :root {
-  --main-color: #57e03b;
+  --main-color: #333;
 }
 
 * {
@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: #222;
+  background: rgb(231, 231, 231);
 }
 
 section {
@@ -61,7 +61,7 @@ section {
   padding: 0.8rem 3rem;
   font-size: 1.7rem;
   border-radius: 0.5rem;
-  background: #666;
+  background: #ea899a;
   color: #fff;
   cursor: pointer;
   font-weight: 600;
@@ -76,7 +76,7 @@ section {
   left: 0;
   right: 0;
   z-index: 10000;
-  background: #333;
+  background: #fd60c1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +118,7 @@ section {
 }
 
 .home .content h3 {
-  color: #fff;
+  color: #000;
   font-size: 4.5rem;
   text-transform: uppercase;
 }
