@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap");
 
 :root {
-  --main-color: #333;
+  --main-color: #f0267a;
 }
 
 * {
@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: rgb(231, 231, 231);
+  background: #ffeaf0;
 }
 
 section {
@@ -51,6 +51,14 @@ section {
   font-size: 4rem;
 }
 
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
+  background: #333;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
 #mail {
   opacity: 0;
 }
@@ -61,7 +69,7 @@ section {
   padding: 0.8rem 3rem;
   font-size: 1.7rem;
   border-radius: 0.5rem;
-  background: #ea899a;
+  background: #333;
   color: #fff;
   cursor: pointer;
   font-weight: 600;
@@ -76,7 +84,7 @@ section {
   left: 0;
   right: 0;
   z-index: 10000;
-  background: #fd60c1;
+  background: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -126,6 +134,7 @@ section {
 .home .content h3 span {
   color: var(--main-color);
   font-size: 4.5rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -142,6 +151,13 @@ section {
   object-fit: cover;
 }
 
+.about {
+  background: #333;
+}
+
+.about .heading {
+  color: #fff;
+}
 .about .row {
   display: flex;
   align-items: center;
@@ -150,14 +166,14 @@ section {
 }
 
 .about .row .image {
-  flex: 1 1 20rem;
+  flex: 1 1 45rem;
   padding: 1rem;
 }
 
 .about .row .image img {
   border-radius: 0.5rem;
   border: 1px solid #333;
-  height: 300px;
+  height: 350px;
   justify-items: center;
   margin-left: 50px;
 }
@@ -168,7 +184,7 @@ section {
 
 .about .row .content h3 {
   font-size: 3.5rem;
-  color: #000;
+  color: #fff;
 }
 
 .about .row .content span {
@@ -178,10 +194,49 @@ section {
 
 .about .row .content p {
   font-size: 1.5rem;
-  color: #000;
+  color: #fff;
   padding: 1rem 0;
   line-height: 2;
   text-align: justify;
+}
+
+.menu .heading i {
+  font-size: 20px;
+  width: 20px;
+}
+
+.menu .lista {
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  padding: 0.4rem;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul li span {
+  font-weight: 600;
+  color: #000;
+}
+
+.menu .product li:hover {
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.gallery {
+  background: #333;
+}
+
+.gallery .heading {
+  color: #fff;
 }
 
 .gallery span {
@@ -197,7 +252,7 @@ section {
 
 .gallery .box-container .box {
   position: relative;
-  border: 1px solid #333;
+  border: 1px solid var(--main-color);
   border-radius: 0.5rem;
   height: 25rem;
   cursor: pointer;
@@ -215,10 +270,10 @@ section {
   top: -10rem;
   left: 0;
   right: 0;
-  background: #333;
+  background: var(--main-color);
   color: #fff;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 0.5rem;
   font-size: 2rem;
 }
 .gallery .box-container .box:hover .title {
@@ -230,8 +285,8 @@ section {
   bottom: -10rem;
   left: 0;
   right: 0;
-  background: #333;
-  padding-top: 1rem;
+  background: var(--main-color);
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -344,6 +399,10 @@ section {
   resize: none;
 }
 
+.footer {
+  background-color: #333;
+}
+
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -353,14 +412,14 @@ section {
 .footer .box-container .box h3 {
   font-size: 2.5rem;
   padding: 1rem 0;
-  color: #000;
+  color: #fff;
 }
 
 .footer .box-container .box a {
   display: block;
   font-size: 1.5rem;
   padding: 1rem 0;
-  color: #000;
+  color: #fff;
 }
 
 .footer .box-container .box a i {
@@ -370,7 +429,7 @@ section {
 
 .footer .box-container .box a:hover i {
   padding-right: 1.5rem;
-  color: #000;
+  color: #fff;
 }
 
 .theme-toggler {
